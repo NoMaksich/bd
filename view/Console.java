@@ -121,7 +121,7 @@ public class Console implements View{
         String str = (String) obj;
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (!((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))) {
+            if (!((ch >= 'а' && ch <= 'я') || (ch >= 'А' && ch <= 'Я'))) {
                 throw new IllegalArgumentException(field + " должно состоять только из букв русского алфавита");
             }
         }
